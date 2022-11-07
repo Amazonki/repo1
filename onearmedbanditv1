@@ -16,3 +16,35 @@ if age >= 21 && choice == "Y"
     puts "Your balance is reset to zero!"
     money = 0
 end
+    if x == 1 && y == 1 && z == 1
+      puts "You got 1$"
+      money = money + 1
+    end
+    if x == 2 && y == 2 && z == 2
+      puts "You got 2$"
+      money = money + 2
+    end
+    if x == 3 && y == 3 && z == 3
+      puts "You got 3$"
+      money = money + 3
+    end
+    if x == 4 && y == 4 && z == 4
+      puts "You got 4$"
+      money = money + 4
+    end
+    if x == 5 && y == 5 && z == 5
+      puts "You got 5$"
+      money = money + 5
+    end
+    if x == 6 && y == 6 && z == 6
+      puts "You got 6$"
+      money = money + 6
+    end
+    if x == 7 && y == 7 && z == 7
+      puts "You got 1$"
+      money = money + 7
+    end
+
+    puts "Your balance is #{money}$ "
+  end
+end
