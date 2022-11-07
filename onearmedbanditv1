@@ -1,0 +1,9 @@
+print "How old are you ? "
+age = gets.to_i
+
+print "Do you want to play ? (Y/N)"
+choice = gets
+
+if age >= 21 && choice == "Y"
+  puts "Let`s play!"
+end
