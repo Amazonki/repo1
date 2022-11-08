@@ -4,15 +4,21 @@ age = gets.to_i
 print "Do you want to play ? (Y/N)"
 choice = gets.strip.capitalize
 
+print "How much money do you have?"
+money = gets.to_i
+
+spin = 1
+
 if age >= 21 && choice == "Y"
   puts "Let`s play!"
-  money = 100
+  currentbalance = money - spin
   puts "Push the lever"
   gets
   x = rand (0..7)
   y = rand (0..7)
   z = rand (0..7)
   puts "xreel = #{x}, yreel = #{y}, zreel = #{z}"
+  puts "Money: #{money} $"
 end
 
 #000
