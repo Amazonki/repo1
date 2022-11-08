@@ -1,17 +1,11 @@
-print "How old are you ? "
-age = gets.to_i
-
-print "Do you want to play ? (Y/N)"
-choice = gets.strip.capitalize
-
-print "How much money do you have?"
+puts "How much money do you have"
 money = gets.to_i
 
 spin = 1
 
-if age >= 21 && choice == "Y"
+money.times do
   puts "Let`s play!"
-  currentbalance = money - spin
+  money = money - spin
   puts "Push the lever"
   gets
   x = rand (0..7)
@@ -19,61 +13,43 @@ if age >= 21 && choice == "Y"
   z = rand (0..7)
   puts "xreel = #{x}, yreel = #{y}, zreel = #{z}"
   puts "Money: #{money} $"
-end
 
-#000
-if x == 0 && y == 0 && z == 0
+  if x == 0 && y == 0 && z == 0
   puts "Your balance is reset to zero!"
   money = 0
-end
 
-#111
-if x == 1 && y == 1 && z == 1
+  elsif x == 1 && y == 1 && z == 1
   puts "You got 1$"
   money = money + 1
-end
 
-#123
-if x == 1 && y == 2 && z == 3
+  elsif x == 1 && y == 2 && z == 3
   puts "You got 123$"
   money = money + 123
-end
 
-#222
-if x == 2 && y == 2 && z == 2
+  elsif x == 2 && y == 2 && z == 2
   puts "You got 2$"
   money = money + 2
-end
 
-#333
-if x == 3 && y == 3 && z == 3
+  elsif x == 3 && y == 3 && z == 3
   puts "You got 3$"
   money = money + 3
-end
 
-#444
-if x == 4 && y == 4 && z == 4
+  elsif x == 4 && y == 4 && z == 4
   puts "You got 4$"
   money = money + 4
-end
 
-#555
-if x == 5 && y == 5 && z == 5
+  elsif x == 5 && y == 5 && z == 5
   puts "You got 5$"
   money = money + 5
-end
 
-#666
-if x == 6 && y == 6 && z == 6
+  elsif x == 6 && y == 6 && z == 6
   puts "Your balance is split in half"
   money = money / 2
-end
 
-#777
-if x == 7 && y == 7 && z == 7
+  elsif x == 7 && y == 7 && z == 7
   puts "Jackpot!!!"
   money = money + 777
 end
+end
 
 puts "Your balance is #{money}$ "
-
