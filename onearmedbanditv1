@@ -7,44 +7,54 @@ choice = gets.strip.capitalize
 if age >= 21 && choice == "Y"
   puts "Let`s play!"
   money = 100
-  puts "Push da tempo"
+  puts "Push the lever"
   gets
-  xreel = rand (0..7)
-  yreel = rand (0..7)
-  zreel = rand (0..7)
-  if x == 0 && y == 0 && z == 0
-    puts "Your balance is reset to zero!"
-    money = 0
+  x = rand (0..7)
+  y = rand (0..7)
+  z = rand (0..7)
+  puts "xreel = #{x}, yreel = #{y}, zreel = #{z}"
 end
-    if x == 1 && y == 1 && z == 1
-      puts "You got 1$"
-      money = money + 1
-    end
-    if x == 2 && y == 2 && z == 2
-      puts "You got 2$"
-      money = money + 2
-    end
-    if x == 3 && y == 3 && z == 3
-      puts "You got 3$"
-      money = money + 3
-    end
-    if x == 4 && y == 4 && z == 4
-      puts "You got 4$"
-      money = money + 4
-    end
-    if x == 5 && y == 5 && z == 5
-      puts "You got 5$"
-      money = money + 5
-    end
-    if x == 6 && y == 6 && z == 6
-      puts "You got 6$"
-      money = money + 6
-    end
-    if x == 7 && y == 7 && z == 7
-      puts "You got 1$"
-      money = money + 7
-    end
 
-    puts "Your balance is #{money}$ "
-  end
+if x == 0 && y == 0 && z == 0
+  puts "Your balance is reset to zero!"
+  money = 0
 end
+
+if x == 1 && y == 1 && z == 1
+  puts "You got 1$"
+  money = money + 1
+end
+
+if x == 2 && y == 2 && z == 2
+  puts "You got 2$"
+  money = money + 2
+end
+
+if x == 3 && y == 3 && z == 3
+  puts "You got 3$"
+  money = money + 3
+end
+
+if x == 4 && y == 4 && z == 4
+  puts "You got 4$"
+  money = money + 4
+end
+
+if x == 5 && y == 5 && z == 5
+  puts "You got 5$"
+  money = money + 5
+end
+
+if x == 6 && y == 6 && z == 6
+  puts "Your balance is split in half"
+  money = money / 2
+end
+
+if x == 7 && y == 7 && z == 7
+  puts "You got 1$"
+  money = money + 70
+end
+
+puts "Your balance is #{money}$ "
+
+
