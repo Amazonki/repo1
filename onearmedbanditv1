@@ -18,38 +18,38 @@ money.times do
   puts "Your balance is reset to zero!"
   money = 0
 
-  elsif x == 1 && y == 1 && z == 1
-  puts "You got 1$"
-  money = money + 1
+    elsif x == 1 && y == 1 && z == 1
+    puts "You got 1$"
+    money = money + 1
 
-  elsif x == 1 && y == 2 && z == 3
-  puts "You got 123$"
-  money = money + 123
+    elsif x == 1 && y == 2 && z == 3
+    puts "You got 123$"
+    money = money + 123
 
-  elsif x == 2 && y == 2 && z == 2
-  puts "You got 2$"
-  money = money + 2
+    elsif x == 2 && y == 2 && z == 2
+    puts "You got 2$"
+    money = money + 2
 
-  elsif x == 3 && y == 3 && z == 3
-  puts "You got 3$"
-  money = money + 3
+    elsif x == 3 && y == 3 && z == 3
+    puts "You got 3$"
+    money = money + 3
 
-  elsif x == 4 && y == 4 && z == 4
-  puts "You got 4$"
-  money = money + 4
+    elsif x == 4 && y == 4 && z == 4
+    puts "You got 4$"
+    money = money + 4
 
-  elsif x == 5 && y == 5 && z == 5
-  puts "You got 5$"
-  money = money + 5
+    elsif x == 5 && y == 5 && z == 5
+    puts "You got 5$"
+    money = money + 5
 
-  elsif x == 6 && y == 6 && z == 6
-  puts "Your balance is split in half"
-  money = money / 2
+    elsif x == 6 && y == 6 && z == 6
+    puts "Your balance is split in half"
+    money = money / 2
 
-  elsif x == 7 && y == 7 && z == 7
-  puts "Jackpot!!!"
-  money = money + 777
-end
+    elsif x == 7 && y == 7 && z == 7
+    puts "Jackpot!!!"
+    money = money + 777
+  end
 end
 
 puts "Your balance is #{money}$ "
