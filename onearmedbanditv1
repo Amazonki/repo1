@@ -53,3 +53,5 @@ money.times do
 end
 
 puts "Your balance is #{money}$ "
+
+#balance could be negative, need to repair it
